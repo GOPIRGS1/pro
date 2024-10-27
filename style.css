@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    padding: 25px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+li, h1, ul {
+    display: inline;
+    margin-right: 15px;
+}
+
+ul {
+    margin-left: 65%;
+}
+
+li {
+    color: gray;
+    cursor: pointer;
+}
+
+li:hover {
+    color: white;
+}
+
+input {
+    width: 60%;
+    padding: 20px;
+}
+
+.searchbox {
+    padding: 50px;
+    text-align: center;
+}
+
+.box {
+    border-color: black;
+    border-width: 4px;
+    border-style: solid;
+    width: 320px;
+    display: inline-block;
+}
+
+.box:hover {
+    background-color: black;
+    color: rgb(214, 214, 47);
+}
+
+.product {
+    text-align: center;
+}
+
+.about {
+    text-align: center;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.contact {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding: 50px;
+}
+
+/* Style for links */
+a {
+    display: inline-block; /* Makes the link behave like a block element */
+    margin: 10px 140px; /* Adds space above and below the link */
+    padding: 20px 20px; /* Adds padding inside the link */
+    background-color: #8ca1b8; /* Background color */
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 15px; /* Rounds the corners */
+    transition: background-color 0.2s; /* Smooth transition for hover effect */
+}
+
+/* Style for the second last link */
+a:nth-last-of-type(1) {
+    background-color: #615654; /* Different background for the last link */
+}
+
+/* Style for the last link */
+a:nth-last-of-type(2) {
+    background-color: #2d382f; /* Different background for the second last link */
+}
+
+/* Hover effect for links */
+a:hover {
+    background-color: #b30095; /* Darker blue on hover */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) { /* Tablets and Mobile Phones */
+    ul {
+        margin-left: 0; /* Center the navigation items */
+        text-align: center; /* Center align the nav items */
+    }
+
+    li {
+        display: block; /* Stack the nav items vertically */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .searchbox {
+        padding: 20px; /* Reduce padding */
+    }
+
+    .box {
+        width: 90%; /* Make boxes responsive */
+        margin: 10px; /* Center boxes */
+    }
+}
+
+@media (max-width: 480px) { /* Mobile Phones */
+    input {
+        width: 80%; /* Adjust input width */
+    }
+
+    .contact {
+        padding: 30px; /* Reduce padding for mobile */
+    }
+}
+
+/* Styles for larger screens (laptops/desktops) */
+@media (min-width: 769px) {
+    .box {
+        width: 320px; /* Default width for boxes */
+        margin: 10px; /* Maintain margin */
+    }
+}
